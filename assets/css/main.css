@@ -2156,7 +2156,7 @@
 
 .white-font {
 	color: #fff;
-	text-shadow: 0.05em 0.05em black;
+	text-shadow: 0.05em 0.05em 0.05em black;
 }
 
 .rayz {
@@ -2164,7 +2164,7 @@
 }
 
 .overlay {
-	background-color: rgba(168, 183, 194, 0.2);
+	background-color: rgba(146, 162, 173, 0.2);
 	height: 100%;
 }
 
