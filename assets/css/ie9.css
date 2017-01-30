@@ -1,5 +1,5 @@
 /*
-	Miniport by HTML5 UP
+	Prologue by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -11,11 +11,5 @@
 	input[type="reset"],
 	button,
 	.button {
-		background-image: url("images/ie/grad0-20.svg");
-	}
-
-/* List */
-
-	ul.social li a:before {
-		background-image: url("images/ie/grad0-20.svg");
+		background-image: url("images/ie/grad0-15.svg");
 	}

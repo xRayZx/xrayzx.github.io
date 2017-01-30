@@ -9,7 +9,7 @@
 		<meta property="og:url" content="http://rayz.io" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.scss" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<script>
@@ -24,170 +24,243 @@
 	</head>
 	<body>
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<li><a href="#rayz">RayZ</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
+		<!-- Header -->
+			<div id="header">
 
-		<!-- Home -->
-			<div class="wrapper style1 first" id="rayz">
-				<div class="overlay">
-					<article class="container" id="top">
-						<div class="row">
-							<div class="4u 12u(mobile)">
-								<!-- <span class="image fit"><img src="images/face.JPG" alt="raymond zhang face" /></span> -->
-							</div>
-							<div class="8u 12u(mobile) white-font rayz">
-								<header>
-									<h1 class="white-font">Hi, I'm <strong class="white-font">Raymond</strong>.</h1>
-								</header>
-								<p class="white-font">But you can call me <strong class="white-font">RayZ</strong>. <br/>
-									Software Engineer with a focus on UI. <br/>
-									Music Producer with a focus on 🔥. <br/>
-									World Explorer with a focus on culture.</p>
-							</div>
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/face.jpg" alt="" /></span>
+							<h1 id="title">Raymond Zhang</h1>
+							<p>Software Engineer</p>
 						</div>
-					</article>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
 				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+
+				</div>
+
 			</div>
 
+		<!-- Main -->
+			<div id="main">
 
-		<!-- Portfolio -->
-			<div class="wrapper style3">
-				<article id="portfolio">
-					<header>
-						<h2>My Apps</h2>
-					</header>
-					<div class="container">
-						<div class="row">
-							<div class="4u 12u(mobile)">
-								<article class="box style2">
-									<a href="http://www.1000px.us" class="image featured"><img src="images/1000px.gif" alt="1000 pixels full stack photo sharing web application" /></a>
-									<h3><a href="http://www.1000px.us">1000px</a></h3>
-									<p>A Photo Sharing Community</p>
-								</article>
-							</div>
-							<div class="4u 12u(mobile)">
-								<article class="box style2">
-									<a href="https://xrayzx.github.io/WebMPC/" class="image featured"><img src="images/WebMPC.gif" alt="visual and audio virtual drum pad machine" /></a>
-									<h3><a href="https://xrayzx.github.io/WebMPC/">Web MPC</a></h3>
-									<p>A Virtual Drum Machine</p>
-								</article>
-							</div>
-							<div class="4u 12u(mobile)">
-								<article class="box style2">
-									<a href="https://chrome.google.com/webstore/detail/focus-cat/bjejgjoblboddchpklahjbkmgfeilodi" class="image featured"><img src="images/FocusCat.gif" alt="focus cat chrome extension productivity distraction" /></a>
-									<h3><a href="https://chrome.google.com/webstore/detail/focus-cat/bjejgjoblboddchpklahjbkmgfeilodi">Focus Cat</a></h3>
-									<p>A Chrome Extension for Productivty</p>
-								</article>
-							</div>
-						</div>
-					</div>
-					<footer>
-					</footer>
-				</article>
-			</div>
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
 
-		<!-- Contact -->
-			<div class="wrapper style4">
-				<article id="contact" class="container 75%">
-					<header>
-						<h2>Get in touch</h2>
-						<p></p>
-					</header>
-					<div>
-						<div class="row">
-							<div class="12u">
-								<hr />
-								<ul class="social">
-									<li><a href="https://github.com/xRayZx/" class="icon fa-github"><span class="label">Github</span></a></li>
-									<li><a href="https://www.linkedin.com/in/zhang-raymond" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://soundcloud.com/xrayzx/tracks" class="icon fa-soundcloud"><span class="label">Soundcloud</span></a></li>
-									<!--
-									<li><a href="#" class="icon fa-rss"><span>RSS</span></a></li>
-									<li><a href="#" class="icon fa-instagram"><span>Instagram</span></a></li>
-									<li><a href="#" class="icon fa-foursquare"><span>Foursquare</span></a></li>
-									<li><a href="#" class="icon fa-skype"><span>Skype</span></a></li>
-									<li><a href="#" class="icon fa-soundcloud"><span>Soundcloud</span></a></li>
-									<li><a href="#" class="icon fa-youtube"><span>YouTube</span></a></li>
-									<li><a href="#" class="icon fa-blogger"><span>Blogger</span></a></li>
-									<li><a href="#" class="icon fa-flickr"><span>Flickr</span></a></li>
-									<li><a href="#" class="icon fa-vimeo"><span>Vimeo</span></a></li>
-									-->
-								</ul>
-								<hr />
-							</div>
+							<header>
+								<h2 class="alt">Hi! I'm <strong>Raymond</strong>.
+
+								</h2>
+								<p>Ligula scelerisque justo sem accumsan diam quis<br />
+								vitae natoque dictum sollicitudin elementum.</p>
+							</header>
+
+							<footer>
+								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
+							</footer>
+
 						</div>
-						<div class="row">
-							<div class="12u">
-								<h3>Email Me</h3>
-								<form method="post" action="#">
-									<div>
-										<div class="row">
-											<div class="6u 12u(mobile)">
-												<input type="text" name="name" id="name" placeholder="Name" />
-											</div>
-											<div class="6u 12u(mobile)">
-												<input type="text" name="email" id="email" placeholder="Email" />
-											</div>
-										</div>
-										<div class="row">
-											<div class="12u">
-												<input type="text" name="subject" id="subject" placeholder="Subject" />
-											</div>
-										</div>
-										<div class="row">
-											<div class="12u">
-												<textarea name="message" id="message" placeholder="Message"></textarea>
-											</div>
-										</div>
-										<div class="row 200%">
-											<div class="12u">
-												<ul class="actions">
-													<li><input type="submit" value="Send Message" /></li>
-													<li><input type="reset" value="Clear Form" class="alt" /></li>
-												</ul>
-											</div>
-										</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Portfolio</h2>
+							</header>
+
+							<p>Here are some web applications that I have built for clients and for fun.</p>
+
+							<div class="row">
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/1000px.gif" alt="" /></a>
+										<header>
+											<h3>1000px</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/FocusCat.gif" alt="" /></a>
+										<header>
+											<h3>Focus Cat</h3>
+										</header>
+									</article>
+								</div>
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/WebMPC.gif" alt="" /></a>
+										<header>
+											<h3>WebMPC</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+										<header>
+											<h3>Natoque Vitae</h3>
+										</header>
+									</article>
+								</div>
+								<div class="4u$ 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+										<header>
+											<h3>Dolor Penatibus</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<header>
+											<h3>Orci Convallis</h3>
+										</header>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">
+
+							<header>
+								<h2>Skills</h2>
+							</header>
+
+							<!-- <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a> -->
+							<div class="skills-container">
+								<div class="skill">
+									<a href="#" class="image"><img src="images/ruby.png" alt="ruby language"/></a>
+								</div>
+								<div class="skill">
+									<a href="#" class="image"><img src="images/rails.png" alt="ruby on rails framework"/></a>
+								</div>
+								<div class="skill">
+									<a href="#" class="image"><img src="images/react.png" alt=""/></a>
+								</div>
+								<div class="skill">
+									<a href="#" class="image"><img src="images/javascript.png" alt=""/></a>
+								</div>
+								<div class="skill">
+									<a href="#" class="image"><img src="images/flux.png" alt=""/></a>
+								</div>
+								<div class="skill">
+									<a href="#" class="image"><img src="images/sketch.png" alt=""/></a>
+								</div>
+								<div class="skill">
+									<a href="#" class="image"><img src="images/photoshop.png" alt=""/></a>
+								</div>
+								<div class="skill">
+									<a href="#" class="image"><img src="images/redis.png" alt=""/></a>
+								</div>
+								<div class="skill">
+									<a href="#" class="image"><img src="images/html.png" alt=""/></a>
+								</div>
+								<div class="skill">
+									<a href="#" class="image"><img src="images/css.png" alt=""/></a>
+								</div>
+								<div class="skill">
+									<a href="#" class="image"><img src="images/git.png" alt=""/></a>
+								</div>
+								<div class="skill">
+									<a href="#" class="image"><img src="images/jquery.png" alt=""/></a>
+								</div>
+								<div class="skill">
+									<a href="#" class="image"><img src="images/postgres.png" alt=""/></a>
+								</div>
+								<div class="skill">
+									<a href="#" class="image"><img src="images/node.png" alt=""/></a>
+								</div>
+								<div class="skill">
+									<a href="#" class="image"><img src="images/vim.png" alt=""/></a>
+								</div>
+								<div class="skill">
+									<a href="#" class="image"><img src="images/excel.png" alt=""/></a>
+								</div>
+							</div>
+
+							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
+							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
+							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
+							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
+							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
+							ornare iaculis.</p>
+
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<p>Elementum sem parturient nulla quam placerat viverra
+							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
+							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
+							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+
+							<form method="post" action="#">
+								<div class="row">
+									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="12u$">
+										<textarea name="message" placeholder="Message"></textarea>
 									</div>
-								</form>
-							</div>
+									<div class="12u$">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
+
 						</div>
-					</div>
-					<footer>
-					</footer>
-				</article>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+					</ul>
+
 			</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/skel-viewport.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-			<script>
-				let submitBtn = $("[type=submit]");
-				String.prototype.replaceAll = function(search, replacement) {
-			    var target = this;
-			    return target.replace(new RegExp(search, 'g'), replacement);
-				};
-				submitBtn.on("click", function (event) {
-					event.preventDefault();
-					let subject = $('#subject')[0].value;
-					let body = $('#message')[0].value;
-					body = body.replaceAll("\n", "%0D%0A");
-					let name = $('#name')[0].value;
-					let email = $('#email')[0].value;
-					let signature = "%0D%0A %0D%0A" + name + "%0D%0A" + email;
-					window.location.href = (`mailto:zhang.rayz@gmail.com?subject=${subject}&body=${body + signature}`);
-				})
-			</script>
 
 	</body>
 </html>
