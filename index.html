@@ -41,7 +41,7 @@
 							<ul>
 								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
 								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-								<li><a href="#skills" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Skills</span></a></li>
+								<li><a href="#skills" id="skills-link" class="skel-layers-ignoreHref"><span class="icon fa-code">Skills</span></a></li>
 								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
 							</ul>
 						</nav>
@@ -52,11 +52,10 @@
 
 					<!-- Social Icons -->
 						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://www.linkedin.com/in/zhang-raymond" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/xrayzx" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://soundcloud.com/xrayzx/tracks" class="icon fa-soundcloud"><span class="label">SoundCloud</span></a></li>
+							<li><a href="mailto:zhang.rayz@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 
 				</div>
@@ -73,9 +72,9 @@
 							<header class="intro">
 								<h2 class="alt">Hi! I'm <strong>Raymond</strong>.</h2>
 								<h4>But you can call me <strong>RayZ</strong>.</h4>
-								<p>Software Engineer with a focus on UI.<br />
-								Wilderness Explorer with a focus on 🌎.<br />
-								Music Producer with a focus on 🔥.
+								<p>Software Engineer with a focus on UI.</p>
+								<p>Wilderness Explorer with a focus on 🌎.</p>
+								<p>Music Producer with a focus on 🔥.</p>
 								</p>
 							</header>
 
@@ -96,51 +95,92 @@
 
 							<p>Here are some web applications that I have built for clients and for fun.</p>
 
-							<div class="row">
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/1000px.gif" alt="" /></a>
-										<header>
-											<h3>1000px</h3>
-										</header>
+							<div class="row projects">
+								<article class="item">
+										<div id="card">
+											<figure class="front">
+												<a href="http://gemboutique.herokuapp.com/" class="image fit"><img src="images/gem.png" alt="" /></a>
+												<header>
+													<h3>Gem Boutique</h3>
+												</header>
+											</figure>
+											<figure class="back">
+												<a href="http://gemboutique.herokuapp.com/" class="proj-desc">
+													<h3 class="title-desc">Gem Boutique</h3>
+													<p class="back-desc">
+														An E-commerce platform for a local jewelry business in York, PA.
+														<br/>
+														<u>Technologies used:</u> <br/>
+														ReactJS / Flux • jQuery • Rails • Redis • PostgreSQL • Stripe API • Devise • reCAPTCHA • HTML5 • CSS3 • Cloudinary
+													</p>
+												</a>
+											</figure>
+										</div>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/FocusCat.gif" alt="" /></a>
-										<header>
-											<h3>Focus Cat</h3>
-										</header>
+										<div id="card">
+											<figure class="front">
+												<a href="http://www.1000px.us/" class="image fit"><img src="images/1000px.gif" alt="" /></a>
+												<header>
+													<h3>1000px</h3>
+												</header>
+											</figure>
+											<figure class="back">
+												<a href="http://www.1000px.us/" class="proj-desc">
+													<h3 class="title-desc">1000px</h3>
+													<p class="back-desc">
+														A full stack photo sharing web application.
+														<br/>
+														<u>Technologies used:</u> <br/>
+														ReactJS / Flux • Rails • PostgreSQL • HTML5 • CSS3 • Masonry.js • Cloudinary
+													</p>
+												</a>
+											</figure>
+										</div>
+									</article>
+									<article class="item">
+										<div id="card">
+											<figure class="front">
+												<a href="https://chrome.google.com/webstore/detail/focus-cat/bjejgjoblboddchpklahjbkmgfeilodi" class="image fit"><img src="images/FocusCat.gif" alt="" /></a>
+												<header>
+													<h3>Focus Cat</h3>
+												</header>
+											</figure>
+											<figure class="back">
+												<a href="https://chrome.google.com/webstore/detail/focus-cat/bjejgjoblboddchpklahjbkmgfeilodi" class="proj-desc">
+													<h3 class="title-desc">Focus Cat</h3>
+													<p class="back-desc">
+														A Chrome Extension for managing your distractions.
+														<br/>
+														<u>Technologies used:</u> <br/>
+														ReactJS • Chrome API • HTML5 • CSS3
+													</p>
+												</a>
+											</figure>
+										</div>
+									</article>
+									<article class="item">
+										<div id="card">
+											<figure class="front">
+												<a href="http://rayz.io/WebMPC/" class="image fit"><img src="images/WebMPC.gif" alt="" /></a>
+												<header>
+													<h3>Web MPC</h3>
+												</header>
+											</figure>
+											<figure class="back">
+												<a href="http://rayz.io/WebMPC/" class="proj-desc">
+													<h3 class="title-desc">Web MPC</h3>
+													<p class="back-desc">
+														A virtual drum machine with visual choreography.
+														<br/>
+														<u>Technologies used:</u> <br/>
+														ReactJS • Howler.js • Amazon Web Services S3 • Anime.js • HTML5 Canvas • CSS3
+													</p>
+												</a>
+											</figure>
+										</div>
 									</article>
 								</div>
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/WebMPC.gif" alt="" /></a>
-										<header>
-											<h3>WebMPC</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<header>
-											<h3>Natoque Vitae</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u$ 12u$(mobile)">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-										<header>
-											<h3>Dolor Penatibus</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-										<header>
-											<h3>Orci Convallis</h3>
-										</header>
-									</article>
-								</div>
-							</div>
-
 						</div>
 					</section>
 
@@ -220,6 +260,12 @@
 									</header>
 								</div>
 								<div class="skill">
+									<a href="https://webpack.js.org/" class="image"><img src="images/webpack.png" alt="webpack module bundler browser"/></a>
+									<header class="skill-name">
+										<h5>Webpack</h5>
+									</header>
+								</div>
+								<div class="skill">
 									<a href="https://redis.io/" class="image"><img src="images/redis.png" alt="redis cache store"/></a>
 									<header class="skill-name">
 										<h5>Redis</h5>
@@ -243,12 +289,12 @@
 										<h5>Photoshop</h5>
 									</header>
 								</div>
-								<div class="skill">
+								<!-- <div class="skill">
 									<a href="https://products.office.com/en-us/excel" class="image"><img src="images/excel.png" alt="microsoft excel spreadsheets"/></a>
 									<header class="skill-name">
 										<h5>Microsoft Excel</h5>
 									</header>
-								</div>
+								</div> -->
 							</div>
 
 							<p>These tools are choice, Mrs. White.</p>

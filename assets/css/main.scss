@@ -266,6 +266,10 @@
 		box-sizing: border-box;
 	}
 
+	.row.projects > * {
+		float: none;
+	}
+
 	.row:after, .row:before {
 		content: '';
 		display: block;
@@ -1591,7 +1595,7 @@
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		color: #150d0b;
 	}
 
 		body.is-loading * {
@@ -1610,12 +1614,12 @@
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		color: #150d0b;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		color: #666;
+		color: #0b0504;
 		line-height: 1.5em;
 	}
 
@@ -1973,8 +1977,14 @@
 /* Item */
 
 	.item {
+		display: inline-block;
 		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
 		margin-bottom: 40px;
+		position: relative;
+		height: 333px;
+		width: 293px;
+		perspective: 800px;
+		margin: 25px 0 25px 40px;
 	}
 
 		.item header {
@@ -1988,6 +1998,53 @@
 				font-size: 1em;
 			}
 
+	#card {
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		position: absolute;
+		transform-style: preserve-3d;
+		transition: transform 1s;
+	}
+
+	#card figure {
+		margin: 0;
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		backface-visibility: hidden;
+	}
+
+	#card .front {
+
+	}
+
+	#card .back {
+		background-color: #c8e7fc;
+		transform: rotateY( 180deg );
+	}
+
+	#card:hover {
+		transform: rotateY( 180deg );
+	}
+
+	.proj-desc {
+		display: block;
+		height: 100%;
+		width: 100%;
+	}
+
+	.title-desc {
+		border-bottom: 1px solid #0d357b;
+	}
+
+	.back-desc {
+		padding: 5px 10px;
+		font-size: 16px;
+		color: #264c8b;
+	}
 /* Icons */
 
 	.icon {
@@ -2025,7 +2082,7 @@
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #222629 url("images/overlay.png");
+		background: #090a0f url("images/overlay.png");
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
 		color: #fff;
 		height: 100%;
@@ -2136,13 +2193,13 @@
 				}
 
 			#nav ul li a.active {
-				background: rgba(0, 0, 0, 0.15);
+				background: rgba(57, 64, 96, 0.4);
 				box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
 				color: #fff;
 			}
 
 				#nav ul li a.active span:before {
-					color: #e27689;
+					color: #f23d70;
 				}
 
 /* Footer */
