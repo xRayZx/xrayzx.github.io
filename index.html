@@ -4,12 +4,12 @@
 		<title>Raymond Zhang | Portfolio</title>
 		<meta charset="utf-8" />
 		<meta property="og:title" content="Raymond Zhang | Portfolio" />
-		<meta property="og:image" content="http://rayz.io/images/stockholm_lq.jpg" />
-		<meta property="og:description" content="Full-Stack Software Engineer well-versed in React.js, Javascript, and Rails, and a professional background in data analysis, accounting, and payroll." />
+		<meta property="og:image" content="http://rayz.io/images/crater_lq.jpg" />
+		<meta property="og:description" content="Full-Stack Software Engineer well-versed in ReactJS, JavaScript, and Rails. Former Data Analyst." />
 		<meta property="og:url" content="http://rayz.io" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.scss" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<script>
@@ -24,170 +24,318 @@
 	</head>
 	<body>
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<li><a href="#rayz">RayZ</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
+		<!-- Header -->
+			<div id="header">
 
-		<!-- Home -->
-			<div class="wrapper style1 first" id="rayz">
-				<div class="overlay">
-					<article class="container" id="top">
-						<div class="row">
-							<div class="4u 12u(mobile)">
-								<!-- <span class="image fit"><img src="images/face.JPG" alt="raymond zhang face" /></span> -->
-							</div>
-							<div class="8u 12u(mobile) white-font rayz">
-								<header>
-									<h1 class="white-font">Hi, I'm <strong class="white-font">Raymond</strong>.</h1>
-								</header>
-								<p class="white-font">But you can call me <strong class="white-font">RayZ</strong>. <br/>
-									Software Engineer with a focus on UI. <br/>
-									Music Producer with a focus on 🔥. <br/>
-									World Explorer with a focus on culture.</p>
-							</div>
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/face.jpg" alt="" /></span>
+							<h1 id="title">Raymond Zhang</h1>
+							<p>Software Engineer</p>
 						</div>
-					</article>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+								<li><a href="#skills" id="skills-link" class="skel-layers-ignoreHref"><span class="icon fa-code">Skills</span></a></li>
+								<li><a href="#connect" id="connect-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Connect</span></a></li>
+							</ul>
+						</nav>
+
 				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/zhang-raymond" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/xrayzx" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://soundcloud.com/xrayzx/tracks" class="icon fa-soundcloud"><span class="label">SoundCloud</span></a></li>
+							<li><a href="mailto:zhang.rayz@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+
+				</div>
+
 			</div>
 
+		<!-- Main -->
+			<div id="main">
 
-		<!-- Portfolio -->
-			<div class="wrapper style3">
-				<article id="portfolio">
-					<header>
-						<h2>My Apps</h2>
-					</header>
-					<div class="container">
-						<div class="row">
-							<div class="4u 12u(mobile)">
-								<article class="box style2">
-									<a href="http://www.1000px.us" class="image featured"><img src="images/1000px.gif" alt="1000 pixels full stack photo sharing web application" /></a>
-									<h3><a href="http://www.1000px.us">1000px</a></h3>
-									<p>A Photo Sharing Community</p>
-								</article>
-							</div>
-							<div class="4u 12u(mobile)">
-								<article class="box style2">
-									<a href="https://xrayzx.github.io/WebMPC/" class="image featured"><img src="images/WebMPC.gif" alt="visual and audio virtual drum pad machine" /></a>
-									<h3><a href="https://xrayzx.github.io/WebMPC/">Web MPC</a></h3>
-									<p>A Virtual Drum Machine</p>
-								</article>
-							</div>
-							<div class="4u 12u(mobile)">
-								<article class="box style2">
-									<a href="https://chrome.google.com/webstore/detail/focus-cat/bjejgjoblboddchpklahjbkmgfeilodi" class="image featured"><img src="images/FocusCat.gif" alt="focus cat chrome extension productivity distraction" /></a>
-									<h3><a href="https://chrome.google.com/webstore/detail/focus-cat/bjejgjoblboddchpklahjbkmgfeilodi">Focus Cat</a></h3>
-									<p>A Chrome Extension for Productivty</p>
-								</article>
-							</div>
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header class="intro">
+								<h2 class="alt">Hi! I'm <strong>Raymond</strong>.</h2>
+								<h4>But you can call me <strong>RayZ</strong>.</h4>
+								<p class="focus">Software Engineer with a focus on UI.</p>
+								<p class="focus">Wilderness Explorer with a focus on 🌎.</p>
+								<p class="focus">Music Producer with a focus on 🔥.</p>
+								</p>
+							</header>
+
+							<!-- <footer>
+								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
+							</footer> -->
+
 						</div>
-					</div>
-					<footer>
-					</footer>
-				</article>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Portfolio</h2>
+							</header>
+
+							<p>Here are some web applications that I have built for clients and for fun.</p>
+
+							<div class="row projects">
+								<article class="item">
+										<div id="card">
+											<figure class="front">
+												<a href="http://gemboutique.herokuapp.com/" class="image fit"><img src="images/gem.png" alt="" /></a>
+												<header>
+													<h3>Gem Boutique</h3>
+												</header>
+											</figure>
+											<figure class="back">
+												<a href="http://gemboutique.herokuapp.com/" class="proj-desc">
+													<h3 class="title-desc">Gem Boutique</h3>
+													<p class="back-desc">
+														An E-commerce platform for a local jewelry business in York, PA.
+														<br/>
+														<u>Technologies used:</u> <br/>
+														ReactJS / Flux • jQuery • Rails • Redis • PostgreSQL • Stripe API • Devise • reCAPTCHA • HTML5 • CSS3 • Cloudinary
+													</p>
+												</a>
+											</figure>
+										</div>
+									</article>
+									<article class="item">
+										<div id="card">
+											<figure class="front">
+												<a href="http://www.1000px.us/" class="image fit"><img src="images/1000px.gif" alt="" /></a>
+												<header>
+													<h3>1000px</h3>
+												</header>
+											</figure>
+											<figure class="back">
+												<a href="http://www.1000px.us/" class="proj-desc">
+													<h3 class="title-desc">1000px</h3>
+													<p class="back-desc">
+														A full stack photo sharing web application.
+														<br/>
+														<u>Technologies used:</u> <br/>
+														ReactJS / Flux • Rails • PostgreSQL • HTML5 • CSS3 • Masonry.js • Cloudinary
+													</p>
+												</a>
+											</figure>
+										</div>
+									</article>
+									<article class="item">
+										<div id="card">
+											<figure class="front">
+												<a href="https://chrome.google.com/webstore/detail/focus-cat/bjejgjoblboddchpklahjbkmgfeilodi" class="image fit"><img src="images/FocusCat.gif" alt="" /></a>
+												<header>
+													<h3>Focus Cat</h3>
+												</header>
+											</figure>
+											<figure class="back">
+												<a href="https://chrome.google.com/webstore/detail/focus-cat/bjejgjoblboddchpklahjbkmgfeilodi" class="proj-desc">
+													<h3 class="title-desc">Focus Cat</h3>
+													<p class="back-desc">
+														A Chrome Extension for managing your distractions.
+														<br/>
+														<u>Technologies used:</u> <br/>
+														ReactJS • Chrome API • HTML5 • CSS3
+													</p>
+												</a>
+											</figure>
+										</div>
+									</article>
+									<article class="item">
+										<div id="card">
+											<figure class="front">
+												<a href="http://rayz.io/WebMPC/" class="image fit"><img src="images/WebMPC.gif" alt="" /></a>
+												<header>
+													<h3>Web MPC</h3>
+												</header>
+											</figure>
+											<figure class="back">
+												<a href="http://rayz.io/WebMPC/" class="proj-desc">
+													<h3 class="title-desc">Web MPC</h3>
+													<p class="back-desc">
+														A virtual drum machine with visual choreography.
+														<br/>
+														<u>Technologies used:</u> <br/>
+														ReactJS • Howler.js • Amazon Web Services S3 • Anime.js • HTML5 Canvas • CSS3
+													</p>
+												</a>
+											</figure>
+										</div>
+									</article>
+								</div>
+						</div>
+					</section>
+
+				<!-- About Me -->
+					<section id="skills" class="three">
+						<div class="container">
+
+							<header>
+								<h2>Skills</h2>
+							</header>
+
+							<div class="skills-container">
+								<div class="skill">
+									<a href="https://www.javascript.com/" class="image"><img src="images/javascript.png" alt="javascript js language"/></a>
+									<header class="skill-name">
+										<h5>JavaScript</h5>
+									</header>
+								</div>
+								<div class="skill">
+									<a href="https://jquery.com/" class="image"><img src="images/jquery.png" alt="jquery framework"/></a>
+									<header class="skill-name">
+										<h5>jQuery</h5>
+									</header>
+								</div>
+								<div class="skill">
+									<a href="https://facebook.github.io/react/" class="image"><img src="images/react.png" alt="react spa framework"/></a>
+									<header class="skill-name">
+										<h5>ReactJS</h5>
+									</header>
+								</div>
+								<div class="skill">
+									<a href="https://facebook.github.io/flux/docs/overview.html" class="image"><img src="images/flux.png" alt="flux data flow architecture"/></a>
+									<header class="skill-name">
+										<h5>Flux</h5>
+									</header>
+								</div>
+								<div class="skill">
+									<a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" class="image"><img src="images/html.png" alt="html5"/></a>
+									<header class="skill-name">
+										<h5>HTML5</h5>
+									</header>
+								</div>
+								<div class="skill">
+									<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3" class="image"><img src="images/css.png" alt="css3"/></a>
+									<header class="skill-name">
+										<h5>CSS3</h5>
+									</header>
+								</div>
+								<div class="skill">
+									<a href="https://git-scm.com/" class="image"><img src="images/git.png" alt="git version control"/></a>
+									<header class="skill-name">
+										<h5>Git</h5>
+									</header>
+								</div>
+								<div class="skill">
+									<a href="https://www.ruby-lang.org/en/" class="image"><img src="images/ruby.png" alt="ruby language"/></a>
+									<header class="skill-name">
+										<h5>Ruby</h5>
+									</header>
+								</div>
+								<div class="skill">
+									<a href="http://rubyonrails.org/" class="image"><img src="images/rails.png" alt="ruby on rails framework"/></a>
+									<header class="skill-name">
+										<h5>Ruby on Rails</h5>
+									</header>
+								</div>
+								<div class="skill">
+									<a href="https://www.postgresql.org/" class="image"><img src="images/postgres.png" alt="postgres database"/></a>
+									<header class="skill-name">
+										<h5>PostgreSQL</h5>
+									</header>
+								</div>
+								<div class="skill">
+									<a href="https://nodejs.org/en/" class="image"><img src="images/node.png" alt="node nodejs javascript"/></a>
+									<header class="skill-name">
+										<h5>Node.js</h5>
+									</header>
+								</div>
+								<div class="skill">
+									<a href="https://webpack.js.org/" class="image"><img src="images/webpack.png" alt="webpack module bundler browser"/></a>
+									<header class="skill-name">
+										<h5>Webpack</h5>
+									</header>
+								</div>
+								<div class="skill">
+									<a href="https://redis.io/" class="image"><img src="images/redis.png" alt="redis cache store"/></a>
+									<header class="skill-name">
+										<h5>Redis</h5>
+									</header>
+								</div>
+								<div class="skill">
+									<a href="https://github.com/vim/vim" class="image"><img src="images/vim.png" alt="vim text editor"/></a>
+									<header class="skill-name">
+										<h5>Vim Text Editor</h5>
+									</header>
+								</div>
+								<div class="skill">
+									<a href="https://www.sketchapp.com/" class="image"><img src="images/sketch.png" alt="sketch design app"/></a>
+									<header class="skill-name">
+										<h5>Sketch 3</h5>
+									</header>
+								</div>
+								<div class="skill">
+									<a href="http://www.adobe.com/products/photoshop.html" class="image"><img src="images/photoshop.png" alt="photoshop adobe photo editing"/></a>
+									<header class="skill-name">
+										<h5>Photoshop</h5>
+									</header>
+								</div>
+								<!-- <div class="skill">
+									<a href="https://products.office.com/en-us/excel" class="image"><img src="images/excel.png" alt="microsoft excel spreadsheets"/></a>
+									<header class="skill-name">
+										<h5>Microsoft Excel</h5>
+									</header>
+								</div> -->
+							</div>
+
+							<!-- <p>These tools are choice, Mrs. White.</p> -->
+
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="connect" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Connect With Me</h2>
+							</header>
+
+							<a href="https://www.linkedin.com/in/zhang-raymond" class="connect"><span class="icon fa-linkedin"/> Link Up</a>
+							<a href="https://github.com/xrayzx" class="connect"><span class="icon fa-github"/> View My Code</a>
+							<a href="mailto:zhang.rayz@gmail.com" class="connect"><span class="icon fa-envelope-o"/> zhang.rayz@gmail.com</a>
+						</div>
+					</section>
+
 			</div>
 
-		<!-- Contact -->
-			<div class="wrapper style4">
-				<article id="contact" class="container 75%">
-					<header>
-						<h2>Get in touch</h2>
-						<p></p>
-					</header>
-					<div>
-						<div class="row">
-							<div class="12u">
-								<hr />
-								<ul class="social">
-									<li><a href="https://github.com/xRayZx/" class="icon fa-github"><span class="label">Github</span></a></li>
-									<li><a href="https://www.linkedin.com/in/zhang-raymond" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://soundcloud.com/xrayzx/tracks" class="icon fa-soundcloud"><span class="label">Soundcloud</span></a></li>
-									<!--
-									<li><a href="#" class="icon fa-rss"><span>RSS</span></a></li>
-									<li><a href="#" class="icon fa-instagram"><span>Instagram</span></a></li>
-									<li><a href="#" class="icon fa-foursquare"><span>Foursquare</span></a></li>
-									<li><a href="#" class="icon fa-skype"><span>Skype</span></a></li>
-									<li><a href="#" class="icon fa-soundcloud"><span>Soundcloud</span></a></li>
-									<li><a href="#" class="icon fa-youtube"><span>YouTube</span></a></li>
-									<li><a href="#" class="icon fa-blogger"><span>Blogger</span></a></li>
-									<li><a href="#" class="icon fa-flickr"><span>Flickr</span></a></li>
-									<li><a href="#" class="icon fa-vimeo"><span>Vimeo</span></a></li>
-									-->
-								</ul>
-								<hr />
-							</div>
-						</div>
-						<div class="row">
-							<div class="12u">
-								<h3>Email Me</h3>
-								<form method="post" action="#">
-									<div>
-										<div class="row">
-											<div class="6u 12u(mobile)">
-												<input type="text" name="name" id="name" placeholder="Name" />
-											</div>
-											<div class="6u 12u(mobile)">
-												<input type="text" name="email" id="email" placeholder="Email" />
-											</div>
-										</div>
-										<div class="row">
-											<div class="12u">
-												<input type="text" name="subject" id="subject" placeholder="Subject" />
-											</div>
-										</div>
-										<div class="row">
-											<div class="12u">
-												<textarea name="message" id="message" placeholder="Message"></textarea>
-											</div>
-										</div>
-										<div class="row 200%">
-											<div class="12u">
-												<ul class="actions">
-													<li><input type="submit" value="Send Message" /></li>
-													<li><input type="reset" value="Clear Form" class="alt" /></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-					<footer>
-					</footer>
-				</article>
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; RayZ 2017</li>
+					</ul>
+
 			</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/skel-viewport.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-			<script>
-				let submitBtn = $("[type=submit]");
-				String.prototype.replaceAll = function(search, replacement) {
-			    var target = this;
-			    return target.replace(new RegExp(search, 'g'), replacement);
-				};
-				submitBtn.on("click", function (event) {
-					event.preventDefault();
-					let subject = $('#subject')[0].value;
-					let body = $('#message')[0].value;
-					body = body.replaceAll("\n", "%0D%0A");
-					let name = $('#name')[0].value;
-					let email = $('#email')[0].value;
-					let signature = "%0D%0A %0D%0A" + name + "%0D%0A" + email;
-					window.location.href = (`mailto:zhang.rayz@gmail.com?subject=${subject}&body=${body + signature}`);
-				})
-			</script>
 
 	</body>
 </html>
