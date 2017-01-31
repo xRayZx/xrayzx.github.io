@@ -93,7 +93,31 @@
 
 	.skill {
 		display: inline-block;
+		box-sizing: border-box;
+		position: relative;
 		width: 150px;
+		height: 150px;
+		z-index: 100;
+		top: 0;
+		transition: top 1s;
+	}
+
+	.skill-name {
+		box-sizing: border-box;
+		position: absolute;
+		top: 115px;
+		left: 0px;
+		width: 150px;
+		opacity: 0;
+		transition: opacity 1s, top 1s;
+	}
+
+	.skill:hover {
+		top: -15px;
+	}
+	.skill:hover .skill-name {
+		top: 150px;
+		opacity: 1;
 	}
 
 	@media screen and (min-width: 961px) and (max-width: 1880px) {
@@ -1689,6 +1713,9 @@
 		clear: both;
 	}
 
+	header.intro {
+		margin: 2em 0;
+	}
 /* Sections/Article */
 
 	section, article {
@@ -2194,7 +2221,7 @@
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/stockholm.jpg");
+				background-image: url("../../images/crater.jpg");
 			}
 
 			#main > section.two {
