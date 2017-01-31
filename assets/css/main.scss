@@ -2662,6 +2662,40 @@
 					padding: 0 1em;
 				}
 
+		/* Project Cards */
+			.item {
+				width: 100%;
+				height: auto;
+				perspective: none;
+				margin: 0;
+				margin-bottom: 15px !important;
+			}
+
+			#card {
+				position: static;
+			}
+
+			#card figure {
+				position: static;
+			}
+
+			#card .back {
+				display: none;
+				transform: rotateY( 180deg );
+			}
+
+			#card:hover {
+				transform: none;
+			}
+
+			.skill {
+				top: -15px;
+				transition: none;
+			}
+			.skill .skill-name {
+				display: none;
+				transition: none;
+			}
 		/* Footer */
 
 			#footer .copyright li {
@@ -2687,4 +2721,12 @@
 	a.connect:hover {
 		color: #376bb4;
 		border-bottom: dotted 1px rgba(128, 128, 128, 0.5);
+	}
+
+	.focus {
+		margin: 0;
+	}
+
+	.focus:first-of-type {
+		margin-top: 15px;
 	}
